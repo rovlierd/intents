@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gradient_start"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:text="open contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnContact"
+            android:background="@color/bg_gradient_end" />
+
+        <Button
+            android:text="call number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnCall"
+            android:background="@color/bg_gradient_end" />
+
+        <Button
+            android:text="open Google"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnGoogle"
+            android:background="@color/bg_gradient_end" />
+
+        <TextView
+            android:id="@+id/txtSpeechInput"
+            android:layout_width="300dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:textColor="@color/white"
+            android:textSize="26dp"
+            android:textStyle="normal"
+            android:layout_height="72dp"
+            android:layout_weight="0.29" />
+
+        <ImageButton
+            android:id="@+id/btnSpeak"
+            android:layout_height="126dp"
+            android:background="@null"
+            android:src="@drawable/mic2"
+            android:layout_width="match_parent"
+            android:layout_marginTop="33dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/tap_on_mic"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+</RelativeLayout>
